@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de loguin</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, cyan, yellow);
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.9);
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: white;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;   
+            color: white;
+        }
+        button:hover{
+            background-color: deepskyblue;
+            cursor:pointer;
+        }
+        .botão{
+            display: flex;
+            justify-content: center;
+            place-items: center ; 
+            height: 100vh;
+            background: #1d2834;
+        }
+        .btn{
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 30px;
+            border: none;
+            border-radius: 1000px;
+            color: black;
+            transition: all 0.6s ease-in-out 0s ;
+            box-shadow: red;
+
+        }
+        .btn:hover{
+            background: transparent;
+            color: #00ffcb;
+            transform: scale(1.5);rotate:(360deg);
+            box-shadow: 0 0 60px rgba(red, green, blue, alpha);
+            cursor: grab;
+            border: 2px solid #00ffcb;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="botão">
+        <button class="btn">
+            botão
+        </button>
+    </div>
+    <div class="Tela-login">
+        <h1>Login</h1>
+        <input type="text" placeholder="Nome">
+        <br>
+        <br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <button>Enviar</button>
+    </div>
+    
+</body>
+</html>
